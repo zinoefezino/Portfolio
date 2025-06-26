@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Zino Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!---HEADER SECTION-->
+
+    <header>
+      <div class="header-container">
+        <div class="logo"><span>Dev</span> Zino</div>
+
+        <nav>
+          <ul class="nav-menu">
+            <div class="mobile-menu-header">
+              <div class="logo"><span>Dev</span> Zino</div>
+            </div>
+            <!-- <ul class="nav-menu"> -->
+            <li><a href="#hero" class="nav-link">Home</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#about" class="nav-link">About Me</a></li>
+            <li>
+              <a href="#contact" class="nav-link contact-btn">Contact Me</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="hamburger">
+          <i class="fa-solid fa-bars" id="open-icon"></i>
+          <i
+            class="fa-solid fa-xmark"
+            id="close-icon"
+            style="display: none"
+          ></i>
+        </div>
+      </div>
+    </header>
+
+    <div class="hero" id="hero">
+      <h1>Create. Design. <span>Launch.</span></h1>
+
+      <p>Turning ideas into sleek, functional websites - one line at a time.</p>
+
+      <a
+        href="https://wa.me/2349040355802?text=Hello%2C%20I%E2%80%99m%20reaching%20out%20from%20your%20portfolio%2C%20can%20we%20talk%3F"
+        target="_blank"
+        class="btn"
+      >
+        Connect with me
+      </a>
+    </div>
+
+    <section class="skills-section" id="skills">
+      <h2>My <span>Skills</span></h2>
+
+      <div class="skills-grid">
+        <div class="skills-card">
+          <i class="fa-brands fa-html5"></i>
+          <h3>HTML5</h3>
+          <p>Structuring web content semantically for accesibility and SEO.</p>
+        </div>
+
+        <div class="skills-card">
+          <i class="fa-brands fa-css3"></i>
+          <h3>CSS3</h3>
+          <p>
+            Styling modern, responsive layouts with advanced CSS techniques.
+          </p>
+        </div>
+
+        <div class="skills-card">
+          <i class="fa-brands fa-js"></i>
+          <h3>JAVASCRIPT</h3>
+          <p>
+            Adding interactivity and dynamic functionality to web applications.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects" id="projects">
+      <h2>My <span>Projects</span></h2>
+      <div class="project-card">
+        <img src="./images/Screenshot (7).png" alt="project 1 screenshot" />
+        <div class="project-info">
+          <h4>Laundry Website</h4>
+          <p>
+            A modern, responsive laundry service website designed to showcase
+            services and improve customer interaction. <br />
+            Built with HTML5, CSS and JAVASCRIPT.
+          </p>
+          <a
+            href="https://zinoefezino.github.io/laundry-website/"
+            target="_blank"
+            class="btn"
+          >
+            <i class="fa-regular fa-eye"></i>Live Demo
+          </a>
+          <a
+            href="https://github.com/zinoefezino/laundry-website"
+            target="_blank"
+            class="btn"
+          >
+            <i class="fa-brands fa-github"></i>Source
+          </a>
+        </div>
+      </div>
+
+      <br />
+
+      <div class="project-card-2">
+        <img src="./images/Screenshot (8).png" alt="project 3 screenshot" />
+        <div class="project-info">
+          <h4>Home Website</h4>
+          <p>
+            A clean and modern homepage layout for a property website. Focused
+            on responsive structure, clear navigation, and engaging visuals.
+          </p>
+          <a
+            href="https://zinoefezino.github.io/Home-website-3/"
+            target="_blank"
+            class="btn"
+          >
+            <i class="fa-regular fa-eye"></i>Live Demo
+          </a>
+          <a
+            href="https://zinoefezino.github.io/Home-website-3/"
+            target="_blank"
+            class="btn"
+          >
+            <i class="fa-brands fa-github"></i>Source
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <br />
+    <br />
+
+    <section class="about-section" id="about">
+      <div class="about-container">
+        <div class="about-image">
+          <img src="./images/undraw_developer-avatar_f6ac.svg" alt="Zino" />
+        </div>
+        <div class="about-text">
+          <h2>About <span>Me</span></h2>
+          <p>
+            I'm Zino, a passionate frontend developer with a knack for creating
+            sleek, functional websites. With a focus on HTML5, CSS3, and
+            JavaScript, I bring ideas to life through clean code and modern
+            design.
+          </p>
+          <p>
+            My journey in web development has been driven by a love for
+            problem-solving and a commitment to delivering high-quality user
+            experiences. Let's connect and build something amazing together!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer" id="contact">
+      <div class="footer-content">
+        <h3>Contact Information</h3>
+
+        <div class="footer-icons">
+          <a href="https://x.com/zee_efezino?s=21" target="_blank"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a href="https://wa.me/2349040355802" target="_blank"
+            ><i class="fab fa-whatsapp"></i
+          ></a>
+          <a
+            href="http://linkedin.com/in/blessing-akpoghelie-9193ba348"
+            target="_blank"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a href="https://github.com/zinoefezino" target="_blank"
+            ><i class="fab fa-github"></i
+          ></a>
+        </div>
+
+        <div class="footer-contact-details">
+          <p>
+            <a href="mailto:zinoakpoghelie17@gmail.com">
+              <i class="fas fa-envelope"></i> zinoakpoghelie17@gmail.com
+            </a>
+          </p>
+          <p>
+            <a href="tel:09040355802">
+              <i class="fas fa-phone"></i> 09040355802
+            </a>
+          </p>
+        </div>
+
+        <hr />
+
+        <p class="footer-copy">© Zino 2025. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      const sections = document.querySelectorAll("section[id]");
+      const navLinks = document.querySelectorAll(".nav-link");
+
+      window.addEventListener("scroll", () => {
+        let current = "";
+
+        sections.forEach((section) => {
+          const sectionTop = section.offsetTop;
+          const sectionHeight = section.clientHeight;
+
+          if (scrollY >= sectionTop - sectionHeight / 3) {
+            current = section.getAttribute("id");
+          }
+        });
+
+        navLinks.forEach((link) => {
+          link.classList.remove("active");
+          if (link.getAttribute("href") === `#${current}`) {
+            link.classList.add("active");
+          }
+        });
+      });
+    </script>
+
+    <script>
+      const hamburger = document.querySelector(".hamburger");
+      const navMenu = document.querySelector(".nav-menu");
+      const openIcon = document.getElementById("open-icon");
+      const closeIcon = document.getElementById("close-icon");
+      const mobileMenuHeader = document.querySelector(".mobile-menu-header");
+
+      hamburger.addEventListener("click", () => {
+        navMenu.classList.toggle("active");
+
+        if (navMenu.classList.contains("active")) {
+          openIcon.style.display = "none";
+          closeIcon.style.display = "block";
+          mobileMenuHeader.style.display = "flex";
+        } else {
+          openIcon.style.display = "block";
+          closeIcon.style.display = "none";
+          mobileMenuHeader.style.display = "none";
+        }
+      });
+
+      // Optional: close menu when a nav link is clicked
+      document.querySelectorAll(".nav-link").forEach((link) => {
+        link.addEventListener("click", () => {
+          navMenu.classList.remove("active");
+          openIcon.style.display = "block";
+          closeIcon.style.display = "none";
+        });
+      });
+    </script>
+  </body>
+</html>
