@@ -239,6 +239,26 @@ nav a {
   box-shadow: 0 6px 12px rgba(78, 44, 34, 0.25);
 }
 
+.project-card-3 {
+  background-color: #f5f5f5;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: auto;
+  /* overflow: hidden; */
+  box-shadow: 0 6px 12px rgba(78, 44, 34, 0.25);
+}
+
+.project-card-3 img {
+  width: 50%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 8px rgba(78, 44, 30, 0.2);
+}
+
 .project-card-2 img {
   width: 50%;
   height: auto;
@@ -457,13 +477,15 @@ nav a {
   }
 
   .project-card,
-  .project-card-2 {
+  .project-card-2,
+  .project-card-3 {
     flex-direction: column; /* stack image and text */
     align-items: center;
   }
 
   .project-card img,
-  .project-card-2 img {
+  .project-card-2 img,
+  .project-card-3 img {
     width: 100%;
     height: auto;
     margin-bottom: 20px;
