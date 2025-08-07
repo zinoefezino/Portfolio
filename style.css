@@ -9,6 +9,7 @@ body {
   color: white;
   background-color: #1e3a8a;
   text-size-adjust: 100%;
+  overflow-x: hidden;
 }
 
 header {
@@ -30,6 +31,8 @@ header {
 .logo {
   font-size: 1.5rem;
   font-weight: bold;
+  margin: 0;
+  padding: 0;
 }
 
 .logo span {
@@ -418,12 +421,17 @@ nav a {
     position: absolute;
     top: 0;
     right: -100%;
-    width: 63%;
+    width: 70%;
     padding: 2rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     height: 100vh;
     transition: right 0.3s ease;
     z-index: 999;
+    margin: 0;
+  }
+
+  header {
+    padding: 20px 10px;
   }
 
   .menu-toggle {
