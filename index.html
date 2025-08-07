@@ -23,34 +23,25 @@
     <!---HEADER SECTION-->
 
     <header>
-      <div class="header-container">
-        <div class="logo"><span>Dev</span> Zino</div>
+      <div class="logo"><span>Dev</span> Zino</div>
 
-        <nav>
-          <ul class="nav-menu">
-            <div class="mobile-menu-header">
-              <div class="logo"><span>Dev</span> Zino</div>
-            </div>
-            <!-- <ul class="nav-menu"> -->
-            <li><a href="#hero" class="nav-link">Home</a></li>
-            <li><a href="#skills" class="nav-link">Skills</a></li>
-            <li><a href="#projects" class="nav-link">Projects</a></li>
-            <li><a href="#about" class="nav-link">About Me</a></li>
-            <li>
-              <a href="#contact" class="nav-link contact-btn">Contact Me</a>
-            </li>
-          </ul>
-        </nav>
+      <nav class="nav-links">
+        <ul class="nav-menu">
+          <!-- <ul class="nav-menu"> -->
+          <li><a href="#hero" class="nav-link">Home</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#about" class="nav-link">About Me</a></li>
+          <li>
+            <a href="#contact" class="nav-link contact-btn">Contact Me</a>
+          </li>
+        </ul>
 
-        <div class="hamburger">
-          <i class="fa-solid fa-bars" id="open-icon"></i>
-          <i
-            class="fa-solid fa-xmark"
-            id="close-icon"
-            style="display: none"
-          ></i>
+        <div class="menu-toggle">
+          <i class="fa-solid fa-bars" id="menu"></i>
+          <i class="fa-solid fa-xmark" id="close"></i>
         </div>
-      </div>
+      </nav>
     </header>
 
     <div class="hero" id="hero">
@@ -271,32 +262,21 @@
     </script>
 
     <script>
-      const hamburger = document.querySelector(".hamburger");
-      const navMenu = document.querySelector(".nav-menu");
-      const openIcon = document.getElementById("open-icon");
-      const closeIcon = document.getElementById("close-icon");
-      const mobileMenuHeader = document.querySelector(".mobile-menu-header");
+      document.addEventListener("DOMContentLoaded", () => {
+        const menuIcon = document.getElementById("menu");
+        const closeIcon = document.getElementById("close");
+        const navList = document.querySelector(".nav-links ul");
 
-      hamburger.addEventListener("click", () => {
-        navMenu.classList.toggle("active");
-
-        if (navMenu.classList.contains("active")) {
-          openIcon.style.display = "none";
+        menuIcon.addEventListener("click", () => {
+          navList.classList.add("show");
+          menuIcon.style.display = "none";
           closeIcon.style.display = "block";
-          mobileMenuHeader.style.display = "flex";
-        } else {
-          openIcon.style.display = "block";
-          closeIcon.style.display = "none";
-          mobileMenuHeader.style.display = "none";
-        }
-      });
+        });
 
-      // Optional: close menu when a nav link is clicked
-      document.querySelectorAll(".nav-link").forEach((link) => {
-        link.addEventListener("click", () => {
-          navMenu.classList.remove("active");
-          openIcon.style.display = "block";
+        closeIcon.addEventListener("click", () => {
+          navList.classList.remove("show");
           closeIcon.style.display = "none";
+          menuIcon.style.display = "block";
         });
       });
     </script>
