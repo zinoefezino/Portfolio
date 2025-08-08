@@ -499,6 +499,19 @@ nav a {
     padding: 10px 20px;
   }
 
+  .about-text p {
+    font-size: 1.125rem;
+    line-height: 1.7;
+    margin-bottom: 20px;
+  }
+
+  .project-info p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    color: #1e3a8a;
+    line-height: 1.7;
+  }
+
   body,
   html {
     overflow-x: hidden;
